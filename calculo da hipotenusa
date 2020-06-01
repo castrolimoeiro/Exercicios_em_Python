@@ -1,0 +1,6 @@
+import math
+print('Vamos descobrir a hipotenusa de um triângulo retângulo \n')
+a = float(input('Digite o valor do cateto oposto: '))
+b = float(input('Digite o valor do cateto adjacente: '))
+c = math.sqrt((a**2)+(b**2))
+print('A hipotenusa tem o valor de: ',c)
