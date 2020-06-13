@@ -1,0 +1,16 @@
+num = int(input('Digite o primeiro termo: '))
+razao = int(input('Digite a razão: '))
+termo = num
+cont = 1
+m = 11
+n = 0
+while cont < m:
+    print('{} '.format(termo), end='')
+    termo += razao
+    cont += 1
+    if cont == m:
+        n = int(input('\nSe deseja vizualizar mais termos digite o número desejado, se não, digite 0\n'))
+        if n !=0:
+            m = n + m
+        else:
+            print('Fim')
