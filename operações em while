@@ -1,0 +1,31 @@
+soma = 0
+opcao = 0
+multi = 0
+maior = 0
+while opcao != 5:
+    num1 = float(input('Digite o primeiro valor: '))
+    num2 = float(input('Digite o segundo valor: '))
+    opcao = int(input('''Escolha a opção que deseja:
+    [1] somar
+    [2] multiplicar
+    [3] maior número
+    [4] digitar os números novamente
+    [5] sair do programa \n'''))
+    if opcao == 1:
+        soma = (num1+num2)
+        print('{} + {} = {}'.format(num1, num2, soma))
+        print('-'*46)
+    if opcao == 2:
+        multi = num1*num2
+        print('{} x {} = {}'.format(num1, num2, multi))
+        print('-'*46)
+    if opcao == 3:
+        if num1 > num2:
+            print('O maior número é {} e o menor é {}'.format(num1, num2))
+            print('-' * 46)
+        if num2 > num1:
+            print('O maior número é {} e o menor é {}'.format(num2, num1))
+            print('-' * 46)
+    if opcao == 4:
+        print('-'*46)
+print('Programa finalizado.')
