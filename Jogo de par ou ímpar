@@ -1,0 +1,31 @@
+from random import randint
+soma = cont = 0
+print('-='*20)
+print('Vamos Jogar Par ou Ímpar')
+print('-='*20)
+while True:
+    num = int(input('Digite um valor: '))
+    pi = str(input('Par ou Ímpar?: [P/I]: ')).upper()
+    cpu = randint(0, 10)
+    soma = (cpu+num)
+    cont += 1
+    if (soma % 2) == 0:
+        print(f'Você digitou {num} e o computador {cpu}. Total de {soma} DEU PAR')
+        if pi == 'P':
+            print('Você venceu! Vamos jogar novamente!')
+        else:
+            if pi == 'I':
+                print('Você perdeu')
+                print('-=' * 20)
+                print(f'Game Over... Você venceu {cont-1} vezes.')
+                break
+    else:
+        print(f'Você digitou {num} e o computador {cpu}. Total de {soma} DEU ÍMPAR')
+        if pi == 'I':
+            print('Você venceu! Vamos jogar novamente!')
+        else:
+            if pi == 'P':
+                print('Você perdeu')
+                print('-=' * 20)
+                print(f'Game Over... Você venceu {cont-1} vezes.')
+                break
